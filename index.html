@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Blogr]</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Core CSS (Includes Tailwind CSS) -->
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="font-body">
+
+  <header class="h-full bg-light-red text-white bg-intro-mobile bg-center bg-no-repeat bg-cover lg:bg-intro-desktop">
+    <nav class="flex justify-between p-4 pt-10 items-center lg:justify-start lg:px-10">
+      <div class="lg:pr-10">
+        <a href="#"><img src="./images/logo.svg" alt="logo blogr"></a>
+      </div>
+
+      <div class="lg:hidden" id="hamburger-div">
+        <a href="#"><img src="./images/icon-hamburger.svg" alt="hamburger menu" id="hamburger"></a>
+      </div>
+
+      <div class="hidden" id="close">
+        <a href="#"><img src="./images/icon-close.svg" alt="close"></a>
+      </div>
+
+      <div class="hidden lg:block">
+        <ul class="flex space-x-4">
+          <li>
+            <a href="#" class="flex items-center hover:border-b-2 transition-all">Products
+              <img src="./images/icon-arrow-light.svg" alt="" class="pl-1">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center hover:border-b-2 transition-all">Company
+              <img src="./images/icon-arrow-light.svg" alt="" class="pl-1">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center hover:border-b-2 transition-all">Connect
+              <img src="./images/icon-arrow-light.svg" alt="" class="pl-1">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ml-auto space-x-4 hidden lg:block">
+        <a href="#">Login</a>
+        <a href="#"
+          class="py-3 px-8 bg-white text-light-red font-extrabold rounded-full hover:bg-very-light-red hover:text-white transition-all">Sign
+          Up</a>
+      </div>
+    </nav>
+
+    <div class="hidden" id="menu">
+      <div class="w-10/12 mx-auto bg-white text-very-dark-blue flex flex-col text-center space-y-6 py-6">
+        <a href="#">Product</a>
+        <a href="#">Company</a>
+        <a href="#">Connect</a>
+        <hr>
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </div>
+
+    <div class="text-center pt-40 space-y-5">
+      <h1 class="text-4xl font-headings w-11/12 mx-auto lg:text-6xl">A modern <br class="lg:hidden"> publishing platform
+      </h1>
+      <p class="w-2/3 mx-auto">Grow your audience and build your online brand</p>
+
+      <div class="space-x-4 pb-52">
+        <a href="#"
+          class="py-3 px-4 bg-white text-light-red font-extrabold rounded-full hover:bg-very-light-red hover:text-white transition-all">Start
+          for Free</a>
+        <a href="#"
+          class="py-3 px-5 text-white border-white border-2 outline-white font-extrabold rounded-full hover:bg-white hover:text-light-red transition-all">Learn
+          More</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lg:grid lg:grid-cols-2">
+    <section class="text-center pt-20 space-y-14 lg:grid lg:col-span-2 lg:grid-cols-2 lg:place-items-center">
+      <h2 class="dark-headings lg:col-span-2 lg:text-4xl">Designed for the future</h2>
+
+      <div class="lg:col-start-2 lg:col-end-3">
+        <img src="./images/illustration-editor-mobile.svg" alt="editor" class="mx-auto lg:hidden">
+        <img src="./images/illustration-editor-desktop.svg" alt="editor" class="w-full h-full hidden lg:block">
+      </div>
+
+      <div class="lg:row-start-2 lg:row-end-3 lg:px-14 space-y-10 lg:space-y-20">
+        <div class="lg:text-left">
+          <h2 class="dark-headings w-2/3 mx-auto lg:m-0">Introducing an extensible editor</h2>
+          <p class="w-4/5 mx-auto pt-5 lg:m-0">Blogr features an exceedingly intuitive interface which lets you focus on
+            one
+            thing:
+            creating content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            change the looks of a blog.</p>
+        </div>
+        <div class="lg:text-left">
+          <h2 class="dark-headings w-2/3 mx-auto lg:m-0">Robust content management</h2>
+          <p class="w-3/4 mx-auto pt-5 lg:m-0">Flexible content management enables users to easily move through posts.
+            Increase
+            the
+            usability of your blog
+            by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="translate-y-52 text-center mx-auto lg:hidden">
+      <img src="./images/illustration-phones.svg" alt="phones" class="mx-auto">
+    </div>
+    <section
+      class="bg-very-dark-gray-blue text-white text-center space-y-4 phones-section pt-52 pb-20 bg-circles bg-top bg-no-repeat bg-cover lg:col-span-2 lg:text-left lg:mt-32 lg:grid lg:grid-cols-2 lg:pt-0 lg:pb-0 lg:place-items-center lg:bg-left-bottom">
+      <div class="hidden lg:block w-1/2">
+        <img src="./images/illustration-phones.svg" alt="phones" class="w-full -translate-y-20">
+      </div>
+
+      <div class="space-y-7 lg:items-center pb-10">
+        <h2 class="text-4xl font-headings">State of the Art Infraestructure</h2>
+        <p class="w-4/5 mx-auto lg:m-0">With reliability and speed in mind, worldwide data centers provide the backbone
+          for
+          ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="text-center pt-14 space-y-10 lg:col-span-2 lg:grid lg:grid-cols-2 lg:place-items-center lg:gap-x-12">
+      <div class="">
+        <img src="./images/illustration-laptop-mobile.svg" alt="laptop" class="mx-auto lg:hidden">
+        <img src="./images/illustration-laptop-desktop.svg" alt="laptop" class="w-full hidden lg:block">
+      </div>
+
+      <div class="space-y-10 lg:space-y-20">
+        <div class="space-y-4 lg:text-left">
+          <h2 class="dark-headings">Free, open, simple</h2>
+          <p class="w-4/5 mx-auto lg:m-0 lg:w-2/3">Blogr is a free and open source application backed by a large
+            community of
+            helpful
+            developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+            tools,
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        </div>
+        <div class="space-y-4 lg:text-left">
+          <h2 class="dark-headings">Powerful tooling</h2>
+          <p class="w-4/5 mx-auto lg:m-0 lg:w-2/3">Batteries included. We built a simple and straightforward CLI tool
+            that makes
+            customization and deployment a breeze,
+            but
+            capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer
+    class="mt-20 bg-very-dark-black-blue text-center space-y-6 py-10 lg:flex lg:justify-around lg:text-left lg:px-20">
+    <div class="pb-10">
+      <a href="#">
+        <img src="./images/logo.svg" alt="logo" class="mx-auto">
+      </a>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold pb-3 text-white">Product</h3>
+      <ul class="space-y-1 text-grayish-blue">
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold pb-3 text-white">Company</h3>
+      <ul class="space-y-1 text-grayish-blue">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold pb-3 text-white">Connect</h3>
+      <ul class="space-y-1 text-grayish-blue">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn
+
+  Login
+  Sign Up
+
+  
+
+  
+  
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn -->
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
