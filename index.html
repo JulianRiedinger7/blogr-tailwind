@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
     rel="stylesheet">
   <!-- Core CSS (Includes Tailwind CSS) -->
-  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="../dist/output.css">
 </head>
 
 <body class="font-body">
@@ -38,19 +38,40 @@
       <div class="hidden lg:block">
         <ul class="flex space-x-4">
           <li>
-            <a href="#" class="flex items-center hover:border-b-2 transition-all">Products
-              <img src="./images/icon-arrow-light.svg" alt="" class="pl-1">
+            <a href="#" class="flex items-center hover:border-b-2 transition-all nav-links">Products
+              <img src="./images/icon-arrow-light.svg" alt="flecha abajo" class="pl-1">
             </a>
+            <div class="bg-white w-2/3 text-very-grayish-blue px-4 hidden nav-menu">
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">Contact</a></li>
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">Newsletter</a></li>
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">LinkedIn</a></li>
+              </ul>
+            </div>
           </li>
           <li>
-            <a href="#" class="flex items-center hover:border-b-2 transition-all">Company
-              <img src="./images/icon-arrow-light.svg" alt="" class="pl-1">
+            <a href="#" class="flex items-center hover:border-b-2 transition-all nav-links">Company
+              <img src="./images/icon-arrow-light.svg" alt="flecha abajo" class="pl-1">
             </a>
+            <div class="bg-white w-2/3 text-very-grayish-blue px-4 hidden nav-menu">
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">Contact</a></li>
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">Newsletter</a></li>
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">LinkedIn</a></li>
+              </ul>
+            </div>
           </li>
           <li>
-            <a href="#" class="flex items-center hover:border-b-2 transition-all">Connect
-              <img src="./images/icon-arrow-light.svg" alt="" class="pl-1">
+            <a href="#" class="flex items-center hover:border-b-2 transition-all nav-links">Connect
+              <img src="./images/icon-arrow-light.svg" alt="flecha abajo" class="pl-1">
             </a>
+            <div class="bg-white w-2/3 text-very-grayish-blue px-4 hidden nav-menu">
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">Contact</a></li>
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">Newsletter</a></li>
+                <li><a href="#" class="hover:text-very-dark-black-blue transition-all">LinkedIn</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -64,13 +85,21 @@
     </nav>
 
     <div class="hidden" id="menu">
-      <div class="w-10/12 mx-auto bg-white text-very-dark-blue flex flex-col text-center space-y-6 py-6">
-        <a href="#">Product</a>
-        <a href="#">Company</a>
-        <a href="#">Connect</a>
+      <div
+        class="w-10/12 mx-auto bg-white font-bold text-very-dark-blue flex flex-col items-center text-center space-y-6 py-6">
+        <a href="#">Product
+          <img src="./images/icon-arrow-light.svg" alt="flecha abajo" class="pl-1">
+        </a>
+        <a href="#">Company
+          <img src="./images/icon-arrow-light.svg" alt="flecha abajo" class="pl-1">
+        </a>
+        <a href="#">Connect
+          <img src="./images/icon-arrow-light.svg" alt="flecha abajo" class="pl-1">
+        </a>
         <hr>
         <a href="#">Login</a>
-        <a href="#">Sign Up</a>
+        <a href="#" class="px-7 py-2 text-white bg-gradient-to-r from-very-light-red to-light-red rounded-full">Sign
+          Up</a>
       </div>
     </div>
 
@@ -209,56 +238,6 @@
       </ul>
     </div>
   </footer>
-
-  <!-- Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-
-  Login
-  Sign Up
-
-  
-
-  
-  
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn -->
 
   <script src="./js/main.js"></script>
 </body>
